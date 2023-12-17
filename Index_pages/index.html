@@ -3,10 +3,12 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="./pick/logo_transparent.png">
     <title>Been ETC</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
+    <link rel="stylesheet" href="./style.css">
   </head>
   <body>
    <!-- navigation bar -->
@@ -19,10 +21,10 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-pills">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#" target="_blank">IIEST Main side</a>
+            <a class="nav-link" href="https://www.iiests.ac.in/" target="_blank">IIEST Main side</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle disabled" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -66,8 +68,8 @@
         </div>
         <div class="carousel-caption d-md-block">
           <!-- <h5 class="h5">First slide label</h5> -->
-          <button type="button" class="ls">Login</button>
-          <button type="button" class="ls">SignIn</button>
+          <button onclick="Login()" type="button" class="ls">Login</button>
+          <button onclick="SignUp()" type="button" class="ls">SignIn</button>
         </div>
       </div>
 
@@ -97,6 +99,41 @@
     </button>
   </div>
 
+
+  <Section id="signup" class="login display_none">
+    <div class="tc bg-light-green dib br3 pa3 grow shadow-5">
+      <form action="" id="form_container">
+        <h2>Sign Up</h2>
+        <label for="email">Email:</label>
+        <input type="text" placeholder="Enter Email" name="email" id="email"><br>
+        <label for="phone">Phone No:</label>
+        <input type="number" placeholder="Enter Phone no:" name="number" id="number"><br>
+        <label for="password">Create New Password:</label>
+        <input type="password" placeholder="Enter Password" name="password" id="password"><br>
+
+        <button type="submit" class="login_btn submit tc dib br3 pa3 ma2 grow bw2 shadow-5">Sign Up</button>
+        <button onclick="closeform2()" type="button" class="login_btn close tc dib br3 pa3 ma2 grow bw2 shadow-5">Close</button>
+      </form>
+    </div>
+  </Section>
+
+  <Section id="login" class="login display_none">
+    <div class="tc bg-light-green dib br3 pa3 grow shadow-5">
+      <form action="" id="form_container">
+        <h2>Log in</h2>
+        <label for="email">Email:</label>
+        <input type="text" placeholder="Enter Email" name="email" id="email"><br>
+        <label for="phone">Phone No:</label>
+        <input type="number" placeholder="Enter Phone no:" name="number" id="number"><br>
+        <label for="password">Password:</label>
+        <input type="password" placeholder="Enter Password" name="password" id="password-login"><br>
+
+        <button type="submit" class="login_btn submit tc dib br3 pa3 ma2 grow bw2 shadow-5">Sign Up</button>
+        <button onclick="closeform()" type="button" class="login_btn close tc dib br3 pa3 ma2 grow bw2 shadow-5">Close</button>
+      </form>
+    </div>
+  </Section>
+
   <!-- Add card  -->
   <div class="yearsofclass">
     <div class="card mardgine" style="width: 18rem;">
@@ -108,8 +145,9 @@
       </div>
     </div>
 
+    <!-- C:\Users\ANIRUDDHA CHANDRA\onedrive\desktop\Web Development\ETC\pick\cpic1.webp -->
     <div class="card mardgine" style="width: 18rem;">
-      <img src="pick/cpic2.jpg" class="card-img-top" alt="...">
+      <img src="./pick/cpic2.jpg" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">Second Year</h5>
         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -139,12 +177,14 @@
   <!-- <footer></footer> -->
 <footer>
   <a href="https://youtube.com/@aniruddhachandra7?si=ceu25Xim1VlBJMrS" target="_blank">YOUTUBE</a>
-  <a href="#" target="_blank">INSTAGRAM</a>
+  <a href="#" target="_blank">LINKEDIN</a>
   <a href="#" target="_blank">FACEBOOK</a>
   <a href="#" target="_blank">PRIVACY POLICY</a>
-  <a class="link" href="#" id="hhhg">&copy; 2023 | Being ETC</a>
+  <a class="link" href="#" id="hhhg">&copy; <span id="Year"></span> | Being ETC | Aniruddha Chandra</a>
   <marquee behavior="fast" direction="right"><a href="#"  id="aabb">&#10031;THANK YOU FOR VISITING&#10031;</a></marquee>
 </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
   </body>
 </html>

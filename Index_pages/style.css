@@ -55,7 +55,7 @@ img{
     margin-right: 38px;
     margin-left: 10px;
     display: flex;
-    background-color: black;
+    background: linear-gradient(to right,rgb(8, 8, 8),rgb(90, 86, 86),rgb(132, 128, 128));
     padding: 10px;
     justify-content: center;
     flex-wrap: wrap;
@@ -65,9 +65,57 @@ img{
 .mardgine{
     margin-right:10px ;
     margin-left: 10px;
+    margin-top: 1rem;
 
 }
 
+/* login and signup page  */
+.login{
+    position: absolute;
+    left: -0.2rem;
+    right:-0.2rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+
+}
+.display_none{
+    display: none;
+}
+.login div{
+    border: 2px solid black;
+    width: 31rem;
+    height: 21rem;
+}
+.login h2{
+    margin-bottom: 20px;
+}
+#email{
+    margin-left: 7rem;
+}
+#number{
+    margin-left: 5rem;
+}
+input{
+    margin-bottom: 1rem;
+    padding: 7px;
+    border: 2px solid black;
+    border-radius: 12px;
+    width: 50%;
+}
+.close{
+    background-color: #fd1d1d;
+    width: 6rem;
+}
+.submit{
+    background-color: greenyellow;
+}
+
+/* login  */
+#password-login{
+    margin-left: 5rem;
+}
 /* footer */
 footer {
     margin-top: 20px;
@@ -84,5 +132,5 @@ footer a {
 }
 #aabb{
     color: chartreuse;
-    text-align: center;
+    text-align:center;
 }
