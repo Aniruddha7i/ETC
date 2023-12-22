@@ -23,6 +23,7 @@ body{
     position: absolute;
     top: -1rem;
     left: -2rem;
+    filter: drop-shadow(10px 10px 20px black);
 }
 img{
     height: 403px;

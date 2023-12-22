@@ -27,23 +27,24 @@
     top: 10px;
     /* left: 2px; */
     height: 100%;
-    width: 15rem;
+    width: 9rem;
     display: flex;
     align-items: center;
     border: 2px solid black;
     background-color: rgb(95, 91, 91);
     /* opacity: 0.5; */
+    z-index: 2;
 
 }
 .sizeli_sidenav{
     margin-left: 7px;
-    width: 14rem;
+    width: 8rem;
     /* height: 5rem; */
     cursor: pointer;
     background-color:rgb(95, 91, 91) ;
     color: white;
     border: 2px solid rgb(95, 91, 91);
-    font-size: 17px;
+    font-size: 12px;
     font-weight: bold;
     padding: 20px;
 }
@@ -51,12 +52,51 @@
     background-color: rgb(164, 156, 156);
 }
 
+/* fixed side navigation bar by midia  */
+@media (max-width: 584px) {
+    .sidenav{
+        display: none;
+    }
+
+    #contaner_pdf{
+       left: 0rem;
+       width: 44rem;
+    }
+
+    #pdf_heading{
+        left: 0rem;
+    }
+    #Book_heading{
+        left: 0rem;
+        width: 100vw;
+    }
+    #contaner_Book{
+       left: 0rem;
+       width: 44rem;
+    }
+
+    #Youtube_heading{
+        left: 0rem;
+        width: 29rem;
+    }
+    #contaner_Youtube{
+       left: 0rem;
+       width: 44rem;
+    }
+    #footer{
+        left: 0rem;
+        width: 44rem;
+        height: 100vw;
+    }
+}
+
+/* pdf  */
 .contaner_pdf{
     position: relative;
     top: 10rem;
-    left: 15rem;
+    left: 9rem;
     margin-right: 10rem;
-    width: 90vw;
+    width: 100vw;
     height: 10rem;
     padding: 20px;
     border: 2px solid black;
@@ -66,7 +106,7 @@
     overflow-x: scroll;
     overflow-y: hidden;
     /* box-shadow:20px 14px 20px 3px rgb(179 169 169); */
-    z-index: -1;
+    z-index: 0;
 }
 
 .contaner_pdf:hover{
@@ -93,7 +133,7 @@
 .pdf_heading{
     position: absolute;
     top: 5rem;
-    left: 16rem;
+    left: 10rem;
     font-weight: bold;
     font-size: 50px;
     z-index: -1;
@@ -106,7 +146,7 @@
     /* text-align: center; */
     position: absolute;
     top: 24rem;
-    left: 16.5rem;
+    left: 10.5rem;
     font-weight: bold;
     font-size: 50px;
     height: 10rem;
@@ -116,9 +156,9 @@
 .contaner_Youtube{
     position: absolute;
     top: 29rem;
-    left: 15rem;
+    left: 9rem;
     margin-right: 10rem;
-    width: 90vw;
+    width: 100vw;
     height: 15.7rem;
     padding: 20px;
     border: 2px solid black;
@@ -141,3 +181,78 @@
 .card-text{
     display: none;
 }
+
+
+/* Book  */
+.contaner_Book{
+    position: relative;
+    top: 45rem;
+    left: 9rem;
+    margin-right: 10rem;
+    width: 100vw;
+    height: 10rem;
+    padding: 20px;
+    border: 2px solid black;
+    display: flex;
+    /* flex-direction: row; */
+    /* overflow-wrap: normal; */
+    overflow-x: scroll;
+    overflow-y: hidden;
+    /* box-shadow:20px 14px 20px 3px rgb(179 169 169); */
+    z-index: -2;
+}
+
+.contaner_Book:hover{
+    box-shadow:20px 14px 20px 3px rgb(179 169 169);
+}
+.cardBook{
+    width: 17rem;
+    margin: 5px;
+    /* padding: 10px; */
+    /* border: 2px solid black; */
+}
+
+.card-body{
+    padding-bottom: 10px;
+}
+.btn{
+    width: 9rem;
+}
+.card-title{
+    width: 15rem;
+    margin-bottom: 10px;
+   /* border: 2px solid black; */
+}
+.Book_heading{
+    position: absolute;
+    top: 50rem;
+    left: 10rem;
+    font-weight: bold;
+    font-size: 50px;
+    z-index: -1;
+}
+
+/* Footer  */
+footer {
+    position: relative;
+    top: 45rem;
+    left: 9rem;
+    margin-top: 20px;
+    background-color: #333;
+    overflow: hidden;
+    z-index: 1;
+    width: 100vw;
+}
+
+footer a {
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+    float: left;
+    color: white;
+}
+#aabb{
+    color: chartreuse;
+    text-align:center;
+}
+
